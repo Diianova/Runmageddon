@@ -1,0 +1,384 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+ul{
+    list-style-type: none;
+}
+html{
+    font-size: 12px;
+    background-color: #0F0D10;
+    color: #ffffff;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #080609;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+.hidden{
+    display: none;
+}
+
+
+
+
+/*------------------------------------*\
+#HEADER
+\*------------------------------------*/
+header{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+header figure{
+    margin-left: 40px;
+}
+.header-navigation{
+    display: flex;
+    align-content: center;
+}
+.main-navigation{
+    display: flex;
+    align-items: center;
+}
+.main-navigation li{
+    padding: 0px 10px;
+    font-size: 1rem;
+    padding: 0px 15px;
+}
+.main-navigation li a:hover{
+    color: #F1C200;
+    cursor: pointer;
+}
+.header-account{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.header-account li:first-child{
+    text-align: right;
+}
+.header-account li:nth-child(2){
+    margin: 0 10px;
+    border: 1px solid #333234;
+}
+.header-account li:last-child{
+    border-left: 1px solid #333234;
+}
+.header-account li a p:nth-child(n+2){
+    font-size: 0.7rem;
+    color: #8E8C8F;
+}
+.header-account span{
+    color: #ffffff;
+}
+
+
+
+
+
+/*------------------------------------*\
+#ASIDE
+\*------------------------------------*/
+aside{
+    width: 18%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    line-height: 2rem;
+    padding: 0px 5px;
+}
+aside h3{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+.info-submenu li a:hover{
+    color: #F1C200;
+}
+.info-submenu{
+    padding: 10px 0px;
+}
+.aside-main-nav>li:nth-child(2){
+    margin-top: 20px;
+}
+.chosen h4{
+    background-image: url(../img/asid-bg.png);
+    background-size: cover;
+    background-position: 40% 15%;
+    color: #000000;
+    position: relative;
+}
+.chosen h4::after{
+    content: "";
+    border: 4px solid transparent; 
+    border-bottom: 4px solid #000000;
+    align-items: flex-end;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+.aside-main-nav h4{
+    position: relative;
+}
+.arrow-down::after{
+    content: "";
+    border: 4px solid transparent;
+    border-top: 4px solid #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.social-media ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 25px 0px;
+}
+.social-media ul li{
+    cursor: pointer;
+}
+.social-media img{
+    background-color: #080609;
+    border-top-radius:50%; 
+}
+
+
+
+
+
+/*------------------------------------*\
+#MAIN
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+#SECTION BANNER
+\*------------------------------------*/
+
+main{
+    width: 82%;
+}
+main .banner{
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: 25% 25%;
+}
+.banner-nav{
+    padding: 30px;
+}
+.banner-nav ul{
+    background-color: #000000;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    padding: 5px;
+}
+.banner-nav ul:first-child::after{
+    content: "";
+    border: 3px solid transparent;
+    border-left: 3px solid #ffffff;
+    position: absolute;
+    top: 7px;
+    right: 40px;
+}
+.banner-nav ul li:last-child a{
+    color: #F1C200;
+}
+.banner>h3, .banner>p, .banner>div{
+    padding-left: 30px;
+}
+.banner>h3{
+    margin-top: 25px;
+    font-size: 3rem;
+    color: #F1C200;
+    text-transform: uppercase;
+}
+.banner>p{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, transparent, #080609);
+}
+.banner>div p{
+    padding-bottom: 20px;
+    width: 50%;
+    font-size: 0.75rem;
+    color: #8E8C8F;
+}
+.banner>div{
+    background-color: #080609; 
+}
+
+
+
+/*------------------------------------*\
+#SECTION TABLE WITH PRICE
+\*------------------------------------*/
+
+.fixture-cost{
+    margin-left: 1%;
+    border: 1px solid #333234;
+    width: 95%;
+}
+.fixture-cost h5{
+    margin: 25px 0px 0px 40px;
+    padding-bottom: 10px;
+    color: #fffc33;
+    text-transform: uppercase;
+}
+.fixture-cost table{
+    margin-left: 25px;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.fixture-cost thead tr td{
+    color: #333234;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-top: 1px solid #997a00;
+    border-bottom: 1px solid #997a00;
+    padding: 5px 0px;
+}
+.fixture-cost thead tr td:first-child{
+    padding-left: 15px; 
+}
+.fixture-cost button{
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    padding: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fixture-cost button:first-child{
+    color: #ffffff;
+    background-color: rgba(102, 153, 153, .2);
+    border-color: #333234;
+}
+.fixture-cost tbody tr td button:last-child{
+    background-color: #fffc33;
+    border-color: #333234;
+}
+.fixture-cost tbody tr td:first-child{
+    padding: 10px 70px 10px 15px;
+    color: #fffc33;
+}
+.fixture-cost tbody tr td:last-child{
+    padding-right: 10px;
+}
+.fixture-cost tbody tr td:nth-child(2){
+    padding-right: 40px;
+}
+.fixture-cost tbody tr td:nth-child(3){
+    padding-right: 40px;
+    font-weight: bold;
+}
+.fixture-cost tbody tr td:nth-child(4){
+    color: #ff4d4d;
+    padding-right: 110px;
+}
+.fixture-cost tbody tr:nth-child(even){
+    background-color: rgba(24, 22, 27, .7);
+}
+
+
+.fixture-cost  .pagin{
+    margin: 30px 0px 30px 40px;
+    display: flex;
+}
+.pagin li{
+    border: 1px solid #333234;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.pagin .current a{
+    color: #fffc33;
+}
+.pagin .current{
+    border-color: #fffc33;
+}
+.fixture-cost .pagin li:nth-child(n+2){
+    margin: 0px 4px;
+}
+
+
+.partners{
+    margin: 50px 50px 20px;
+    text-align: center; 
+}
+
+
+/*------------------------------------*\
+#FOOTER
+\*------------------------------------*/
+footer{
+    width: 100%;
+}
+
+
+
+
+
+/*------------------------------------*\
+#TABLET VERSION
+\*------------------------------------*/
+@media only screen and (max-width: 1024px){
+    html{
+    font-size: 10px;
+    }
+    figure{
+        order: 1;
+    }
+    .header-navigation{
+        order: 3;
+    }
+    .header-account{
+        order: 2;
+    }
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    .banner>div p{
+        width: 100%;
+        padding-right: 30px;
+    }
+
+}
+
+
+
+
+
+
+/*------------------------------------*\
+#MOBILE VERSION
+\*------------------------------------*/
+@media only screen and (max-width: 768px){
+
+}
